@@ -122,22 +122,6 @@ Expected workflow:
 4. Pass the final balances to `calculate_settlements()`.
 5. Display the settlement transactions.
 
-Example:
-
-```python
-from expense_manager import add_expense
-from settlement import calculate_settlements
-
-balances = {}
-
-add_expense(balances, "Alice", 600, ["Alice", "Bob", "Charlie"])
-
-settlements = calculate_settlements(balances)
-
-for debtor, creditor, amount in settlements:
-    print(f"{debtor} pays {creditor}: ₹{amount}")
-```
-
 ## Collaboration Guidelines
 
 We will use Git and GitHub to collaborate.
